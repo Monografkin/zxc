@@ -40,7 +40,5 @@ class Advertisement(models.Model):
     def image_disp(self):
         if self.image:
             return format_html(
-                '<img src="{}" style="width: 50px;">', self.image.url
+                '<img src="{url}" style="max-width: 50px; max-height: 60px">', url=self.image.url
             )
-        else:
-            return '-'
