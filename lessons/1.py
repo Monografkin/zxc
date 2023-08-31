@@ -23,4 +23,3 @@ def strcounter2(s):
         for sym, count in syms_counter.items():
             print(sym, count)
 
-
